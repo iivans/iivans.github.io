@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac Ivans | Resume</title>
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #52606d;
+      --line: #d9e2ec;
+      --accent: #0b4f6c;
+      --accent-dark: #083b51;
+      --paper: #ffffff;
+      --background: #f5f7fa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--background);
+    }
+
+    main {
+      max-width: 920px;
+      margin: 40px auto;
+      padding: 32px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #111827;
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin: 0;
+      padding-bottom: 10px;
+      border-bottom: 3px solid var(--accent);
+      font-size: 2.4rem;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--line);
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 4px;
+      font-size: 1.08rem;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .contact {
+      margin: 18px 0 28px;
+      color: var(--muted);
+    }
+
+    .contact strong {
+      color: var(--ink);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 15px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 12px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .project,
+    .job,
+    .education-item {
+      margin-bottom: 22px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .skills p {
+      margin-bottom: 7px;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        margin: 0;
+        padding: 22px;
+        border: 0;
+        border-radius: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Isaac Ivans</h1>
+    <div class="contact">
+      Springer, NM 87747<br />
+      575-643-5141 | <a href="mailto:ivansisaac22@gmail.com">ivansisaac22@gmail.com</a><br />
+      GitHub: <a href="https://github.com/iivans">github.com/iivans</a><br />
+      Portfolio: <a href="https://iivans.github.io">https://iivans.github.io</a><br />
+      <a class="button" href="Isaac_Ivans_Resume.pdf">Download Resume PDF</a>
+    </div>
+
+    <section class="section">
+      <h2>Professional Summary</h2>
+      <p>
+        Computer Science graduate student and Graduate Assistant specializing in machine learning,
+        computer vision, IT support, and systems networking. Experienced in developing deep learning
+        models for medical imaging and deploying Raspberry Pi-based networking solutions. Strong
+        background in troubleshooting, technical support, retail operations, staff training, and leadership.
+      </p>
+    </section>
+
+    <section class="section skills">
+      <h2>Technical Skills</h2>
+      <p><strong>Languages:</strong> Python, C++, SQL, HTML</p>
+      <p><strong>Machine Learning:</strong> TensorFlow, PyTorch, Deep Learning, Computer Vision, Image Processing</p>
+      <p><strong>Data/Research:</strong> NumPy, Pandas, Scikit-learn, Matplotlib, MATLAB</p>
+      <p><strong>Systems/IT:</strong> Linux, Windows, DNS, VPN, Raspberry Pi, POS Systems, Technical Support</p>
+      <p><strong>Tools:</strong> Git, APIs, Microsoft Office, Zoom, Outlook</p>
+      <p><strong>Professional:</strong> Leadership, Staff Training, Inventory Control, Payroll, Bookkeeping, Customer Support</p>
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Deep-Learning Approaches for Automated Pneumonia Detection</h3>
+        <p class="meta">Master's Thesis Project | TensorFlow, PyTorch, Python, Computer Vision</p>
+        <ul>
+          <li>Developed a comparative deep learning study for pneumonia detection using chest X-ray images.</li>
+          <li>Designed and evaluated CNN, tuned CNN, VAE, and GAN-based classification approaches.</li>
+          <li>Preprocessed medical images using grayscale conversion, resizing, normalization, and augmentation.</li>
+          <li>Addressed class imbalance using class weighting and controlled evaluation methods.</li>
+          <li>Evaluated models using accuracy, precision, recall, specificity, F1-score, ROC-AUC, and confusion matrices.</li>
+          <li>Applied Grad-CAM visualizations to improve interpretability and examine model decision regions.</li>
+          <li>Compared trade-offs between discriminative CNN models and generative-assisted approaches.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Pi-hole Network-Wide Ad Blocking + VPN Integration</h3>
+        <p class="meta">Raspberry Pi Project | Linux, DNS, Networking, Tailscale/WireGuard</p>
+        <ul>
+          <li>Deployed Pi-hole on Raspberry Pi to provide network-wide DNS filtering and ad blocking.</li>
+          <li>Configured DNS settings for local network devices and tested integration with Starlink internet.</li>
+          <li>Troubleshot DNS resolution issues, routing conflicts, service failures, and web interface errors.</li>
+          <li>Configured secure remote access using VPN tools such as Tailscale/WireGuard.</li>
+          <li>Explored uptime monitoring and reliability checks to detect outages and service problems.</li>
+          <li>Strengthened hands-on experience with Linux administration, networking, and remote troubleshooting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Work Experience</h2>
+
+      <div class="job">
+        <h3>Graduate Assistant</h3>
+        <p class="meta">New Mexico Highlands University | Las Vegas, NM | September 2024 - Present</p>
+        <ul>
+          <li>Assist professors with grading, instructional support, and course organization in computer science classes.</li>
+          <li>Provide technical guidance to students working on programming and machine learning assignments.</li>
+          <li>Support research initiatives involving artificial intelligence, software development, and computer vision.</li>
+          <li>Provide remote technical support using Zoom, Microsoft Outlook, and university systems.</li>
+          <li>Assist with workshops, training, documentation, and departmental records.</li>
+          <li>Train new graduate assistants on departmental procedures and software tools.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Manager / Butcher</h3>
+        <p class="meta">Grocery Outlet | Springer, NM | December 2018 - Present</p>
+        <ul>
+          <li>Manage daily grocery store operations including staff scheduling, inventory control, and vendor coordination.</li>
+          <li>Train employees and support customer service, food safety, and operational efficiency.</li>
+          <li>Oversee meat department operations, product preparation, and compliance procedures.</li>
+          <li>Handle bookkeeping, payroll, documentation, and POS troubleshooting.</li>
+          <li>Use IT skills to resolve system issues, support store technology, and maintain business operations.</li>
+          <li>Coordinate with vendors and resolve customer inquiries in a fast-paced retail environment.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Work Study Student</h3>
+        <p class="meta">New Mexico Highlands University | Las Vegas, NM | August 2020 - December 2020</p>
+        <ul>
+          <li>Provided technical support for computer labs and assisted faculty with administrative tasks.</li>
+          <li>Troubleshot hardware and software issues for students, faculty, and university events.</li>
+          <li>Helped maintain lab equipment and supported event setup/logistics.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Target Setter</h3>
+        <p class="meta">NRA Whittington Center | Raton, NM | April 2019 - September 2019</p>
+        <ul>
+          <li>Prepared and maintained targets for shooting competitions while following safety procedures.</li>
+          <li>Assisted event organizers with logistics, equipment setup, and customer service.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Cashier</h3>
+        <p class="meta">Russell's Truck &amp; Travel Center | Springer, NM | January 2016 - December 2018</p>
+        <ul>
+          <li>Processed customer transactions and provided front-line customer service.</li>
+          <li>Maintained checkout area organization and assisted with stocking and inventory tasks.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="education-item">
+        <p><strong>Master of Science in Computer Science</strong><br />
+        New Mexico Highlands University | Las Vegas, NM<br />
+        May 2023 - Present</p>
+      </div>
+      <div class="education-item">
+        <p><strong>Bachelor of Science in Computer Science</strong><br />
+        New Mexico Highlands University | Las Vegas, NM<br />
+        August 2018 - May 2023</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Certifications and Licenses</h2>
+      <p>Driver's License</p>
+    </section>
+
+    <section class="section">
+      <h2>Additional Information</h2>
+      <p>Authorized to work in the United States for any employer.</p>
+      <p>Language: English - Expert</p>
+    </section>
+  </main>
+</body>
+</html>
